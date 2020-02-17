@@ -1,4 +1,5 @@
-Classes allow you to store information.
+Classes allow you to store information. Used in order to make it interactive. Incoming data from App.js can be saved to a variables
+and imported into the helper function/component file by putting the variable into the jsx, then receiving it in the corresponding helper function.
 
 1. You start with a function
 function Counter (){

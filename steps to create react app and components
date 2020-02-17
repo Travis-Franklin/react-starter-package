@@ -16,10 +16,28 @@ when setting up a component file, you need to :
 import React from 'react';
 
 fucntion createFunction (){
+    return (
+        <div>
+        <h1>Hello World</h1>
+        </div>
+    );
+}
 
-};
 
 export default createFunction;
 
 Make sure function name and file name are capitalized. 
 
+
+FOR IMPORTING data into a component file, or helper function, you can save a variable in your App.js:
+
+let websiteCopy="lorem impsum"
+
+function APP (){
+    return (
+        <Counter/>
+        <Maincontent content={websiteCopy}/>
+    );
+}
+
+export default App;

@@ -1,0 +1,51 @@
+Axios is library that sends requests. 
+--hey server, I'm talking to you from react
+
+Express is when you create a server that is listening for requests. 
+
+AJAX= asynchronous javascript and XML, more of a technique not a technology, can substitue ajax, axios, get
+Axios is the most popular
+
+
+import axios from 'axios';
+const API_ENDPOINT = 'https://endpoint.com'
+
+axios.get(API_ENDPOINT)
+    .then (response => {
+        console.log(response);
+    })
+
+
+NEXT:
+
+note: data is the term that axios has built in that accesses the information we will need. 
+Add .key in order to access the object, below the key is .name
+
+
+function App() {
+    axios.get(API_ENDPOINT)
+    .then (response => {
+        console.log(response.data.name);
+    })
+}
+
+Turn it into a class
+
+class App extends React.Component {
+    constructor (props) {
+        super(props);
+        this.state = {
+            name: 'not their real name'
+        }
+    }
+
+    render () {
+        return (
+            <header>{this.state.name}</header>
+
+        )
+    }
+
+
+}
+

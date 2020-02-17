@@ -40,7 +40,7 @@ class Counter extends React.Component{
     render () {
         return (
         <div>
-        <h1 onClick = 
+        <h1 onClick ={this._incrementValue} 
         }}>{this._incrementValue}</h1>
         </div>)
     }
