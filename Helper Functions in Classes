@@ -1,0 +1,52 @@
+
+ Why helper functions? 
+    -allows you to make code more flexible
+    -use underscore to name them ex '_incrementValue'
+    
+
+
+1.
+class Counter extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            value: 1
+        };
+    }
+    render () {
+        return (
+        <div>
+        <h1 onClick = {() => {
+            this.setState({
+                value: this.state.value + 1
+            })
+        }}>{this.state.value}</h1>
+        </div>)
+    }
+    _incrementValue = () => {
+
+    }
+};
+
+2. 
+
+class Counter extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            value: 1
+        };
+    }
+    render () {
+        return (
+        <div>
+        <h1 onClick = 
+        }}>{this._incrementValue}</h1>
+        </div>)
+    }
+    _incrementValue = () => {
+            this.setState({
+                value: this.state.value + 1
+            });
+        }
+};

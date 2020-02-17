@@ -1,0 +1,73 @@
+Classes allow you to store information.
+
+1. You start with a function
+function Counter (){
+    return (
+        <div>
+        <h1>Hello World</h1>
+        </div>
+    );
+}
+
+2. rename top line like so and move your function into it.
+
+class Counter extends React.Component{
+    function () {
+        return (
+        <div>
+        <h1>Hello World</h1>
+        </div>
+    );
+    }
+};
+
+3. rename function to render
+
+class Counter extends React.Component{
+    render () {
+        return (
+        <div>
+        <h1>Hello World</h1>
+        </div>
+    );
+    }
+};
+
+4. Setting a class to have its own variables, 
+
+class Counter extends React.Component{
+    constructor(props) {
+        super(props);
+    }
+    render () {
+        let value = 1;
+        return (
+        <div>
+        <h1>{value}</h1>
+        </div>
+    );
+    }
+};
+
+5. Accessing the variables, when someone clicks on the counter, it increases by 1
+
+class Counter extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            value: 1
+        };
+    }
+    render () {
+        return (
+        <div>
+        <h1 onClick = {() => {
+            this.setState({
+                value: this.state.value + 1
+            })
+        }}>{this.state.value}</h1>
+        </div>)
+    }
+};
+
+export default Counter;

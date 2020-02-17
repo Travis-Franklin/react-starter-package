@@ -1,0 +1,25 @@
+1. npx create-react-app name-of-app
+
+2. cd into-name-of-app-just-created
+
+3. npm start
+
+start in app.js, don't really touch index.js
+
+jsx looks like html,  but is written in javascript. 
+
+1 component per file
+
+All files should go into source directory, because that is where REact is looking for component
+
+when setting up a component file, you need to :
+import React from 'react';
+
+fucntion createFunction (){
+
+};
+
+export default createFunction;
+
+Make sure function name and file name are capitalized. 
+
