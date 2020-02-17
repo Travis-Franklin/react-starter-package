@@ -1,0 +1,22 @@
+
+npm i react-router-dom
+
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    link
+} from "react-router-dom";
+
+//wrap <Router> around your entire App.js file
+
+
+function Counter (){
+    return (
+        <Router>
+        <div>
+        <h1>Hello World</h1>
+        </div>
+        </Router>
+    );
+}
